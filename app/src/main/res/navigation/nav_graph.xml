@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.plcoding.streamchatapp.ui.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_channelsFragment"
+            app:destination="@id/channelsFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/channelsFragment"
+        android:name="com.plcoding.streamchatapp.ui.channel.ChannelsFragment"
+        android:label="ChannelsFragment" >
+        <action
+            android:id="@+id/action_channelsFragment_to_messageFragment"
+            app:destination="@id/messageFragment" />
+        <action
+            android:id="@+id/action_channelsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.plcoding.streamchatapp.ui.message.MessageFragment"
+        android:label="MessageFragment" >
+        <argument
+            android:name="channelID"
+            app:argType="string" />
+    </fragment>
+</navigation>

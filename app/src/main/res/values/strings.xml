@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">ChatPrep</string>
-    <string name="api_key">nujtwpkcvpf9</string>
+    <string name="api_key">fzswtewqhws3</string>
+    <string name="api_secret">rp44w3mdjc487dx7nbcxhqhb4yjbnaxnseyxjshwz9xs4zkjmeq6z425u8zucvuh</string>
     <string name="confirm">Confirm</string>
     <string name="login">Login</string>
     <string name="your_name">Your name</string>
